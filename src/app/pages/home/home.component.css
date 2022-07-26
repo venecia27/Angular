@@ -1,5 +1,4 @@
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
 
 * {
     margin: 0;
@@ -52,22 +51,3 @@
 .sobremi > img {
     height: 250px;
 }
-
-    
-</style>
-
-<app-socials></app-socials>
-<div class="content" role="main">
-  <div class="sobremi">
-    <div class="info-personal">
-      <img src="../../assets/perfil.jpg" alt="">
-      <div class="descripcion-personal">
-        <h1>Yenny Almao</h1>
-        <p>Full Stack Developer Jr.</p>
-      </div>
-    </div>
-    <img src="../../assets/banner.jpg" alt="">
-  </div>
-</div>
-
-<app-navbar></app-navbar>

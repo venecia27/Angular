@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+header > img {
+    height: 70px;
+}
+
+header .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .redes a {
+    position: relative;
+    left: -10px;
+    text-decoration: none;
+    padding: 7px 10px;
+    color: #42053f;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+header .redes img {
+    height: 40px;
+}

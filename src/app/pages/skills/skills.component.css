@@ -1,0 +1,138 @@
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* top: -10px; */
+    font-family: "Open Sans", sans-serif;
+    transition: 0.5s all;
+}
+
+.content h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: -60px;
+}
+
+.content .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    width: 50%;
+    background-color: #983f90;
+    border-radius: 20px;
+    /* color: rgb(245, 28, 210); */
+    box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+    -webkit-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+    -moz-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+    padding: 20px;
+}
+
+.content .skills .skill {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.content .skills .skill p {
+    font-size: 21px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.content .skills button {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.content .skills button:hover {
+    cursor: pointer;
+}
+
+.content .skills .form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.content .skills .form form {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8b5ff;
+    /* height: 400px; */
+    width: 500px;
+    padding: 15px;
+}
+
+.content .skills .form form .close {
+    align-self: flex-end;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #42053f;
+}
+
+.content .skills .form form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content .skills .form form p {
+    text-align: center;
+}
+
+.content .skills .form form label {
+    font-weight: 800;
+}
+
+.content .skills .form form input {
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    background-color: #42053f;
+    color: white;
+}
+
+.content .skills .form form textarea {
+    padding: 5px;
+}
+
+
+.content .skills .form form .editar,
+.content .skills .form form .borrar {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color: #42053f;
+    box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+    color: #983f90;
+    margin: 10px auto;
+}
+
+
+.content .skills .show {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}

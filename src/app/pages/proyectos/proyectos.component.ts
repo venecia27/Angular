@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-proyectos',
+  templateUrl: './proyectos.component.html',
+  styleUrls: ['./proyectos.component.css']
 })
-export class AppComponent {
-  title = 'Home';
+export class ProyectosComponent implements OnInit {
   stateForm = false;
   openForm(id: number, type: string) {
     if (type == "editar") {
@@ -24,4 +23,9 @@ export class AppComponent {
     }
     this.stateForm = false;
   }
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }

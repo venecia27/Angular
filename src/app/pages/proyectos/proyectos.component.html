@@ -1,0 +1,92 @@
+<div class="content" role="main">
+    <h1>Proyectos</h1>
+    <div class="proyectos">
+        <!--Aca deberia de haber un for/foreach que recorra los proyectos y los muestre-->
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 1</h3>
+            <div class="actions">
+                <button (click)="openForm(0,'editar')">E</button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(0, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_0">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_0">
+                        <label for="proyecto_0">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_0" value="Proyecto prueba 1">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button (click)="openForm(0,'borrar')">B</button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(0, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 2</h3>
+            <div class="actions">
+                <button (click)="openForm(1,'editar')">E</button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(1, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_1">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_1">
+                        <label for="proyecto_1">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_1" value="Proyecto prueba 2">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button (click)="openForm(1,'borrar')">B</button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(1, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 3</h3>
+            <div class="actions">
+                <button (click)="openForm(2,'editar')">E</button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(2, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_2">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_2">
+                        <label for="proyecto_2">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_2" value="Proyecto prueba 3">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button (click)="openForm(2,'borrar')">B</button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(2, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

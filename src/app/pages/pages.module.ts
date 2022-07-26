@@ -6,6 +6,8 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { LoginComponent } from './login/login.component';
+import { CrearCuentaComponent } from './crear-cuenta/crear-cuenta.component';
 
 
 
@@ -16,7 +18,9 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
     ExperienciaComponent,
     EducacionComponent,
     SkillsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    LoginComponent,
+    CrearCuentaComponent
   ],
   imports: [
     CommonModule

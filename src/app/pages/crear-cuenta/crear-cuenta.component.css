@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login h1 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .login .input {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .login .input label {
+        font-weight: 800;
+        padding: 5px 0;
+    }
+
+    .login .input input {
+        border: none;
+        outline: none;
+        background-color: #42053f;
+        color: #d8b5ff;
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+
+    .login button {
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: #983f90;
+        color: #42053f;
+        border-radius: 8px;
+        font-weight: 800;
+        padding: 10px 25px;
+        box-shadow: 3px 3px 0px 0px rgba(245, 28, 210, 0.75);
+        -webkit-box-shadow: 3px 3px 0px 0px rgba(245, 28, 210, 0.75);
+        -moz-box-shadow: 3px 3px 0px 0px rgba(245, 28, 210, 0.75);
+    }
+
+    .login .cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .login .cuenta a {
+        padding: 5px 0;
+        text-decoration: none;
+        color: #42053f;
+        font-weight: 800;
+    }
+
+    .login .cuenta a:hover {
+        text-decoration: underline;
+    }

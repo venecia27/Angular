@@ -1,72 +1,246 @@
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
+    .content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* top: -10px; */
+        font-family: "Open Sans", sans-serif;
+        transition: 0.5s all;
+    }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+    .content h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        position: relative;
+        top: -60px;
+    }
 
-.sobremi {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    position: relative;
-    top: 0;
-}
+    .content .proyectos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
 
-.sobremi .info-personal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 30px;
-}
+    .content .proyectos .proyecto {
+        position: relative;
+        background-color: #42053f;
+        padding: 15px;
+    }
 
-.sobremi .info-personal img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
+    .content .proyectos .proyecto img {
+        height: 150px;
+    }
 
-.sobremi .info-personal h1 {
-    font-size: 32px;
-    text-align: center;
-}
+    .content .proyectos .proyecto h3 {
+        color: white;
+    }
 
-.sobremi .info-personal p {
-    font-weight: 600;
-    font-size: 21px;
-}
+    .content .proyectos .proyecto .actions {
+        position: absolute;
+        top: -40px;
+        right: -20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
-.sobremi > img {
-    height: 250px;
-}
+    .content .proyectos .proyecto .actions button {
+        height: 40px;
+        width: 40px;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .content .proyectos .proyecto .actions button img {
+        height: 40px;
+    }
+    .content .proyectos .proyecto .actions .btn_eliminar img {
+        height: 25px;
+    }
+    .content .proyectos .proyecto .actions button:hover {
+        cursor: pointer;
+    }
+    /*------Form-------*/
+    .content .proyectos .proyecto .actions .form {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        height: 0;
+        width: 0;
+        display: none;
+    }
 
+    .content .proyectos .proyecto .actions .form form {
+        display: flex;
+        flex-direction: column;
+        background-color: #d8b5ff;
+        /* height: 400px;  */
+        width: 500px;
+        padding: 15px;
+    }
+
+    .content .proyectos .proyecto .actions .form form .close {
+        align-self: flex-end;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background: none;
+        color: #42053f;
+    }
+
+    .content .proyectos .proyecto .actions .form form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content .proyectos .proyecto .actions .form form p {
+        text-align: center;
+    }
+
+    .content .proyectos .proyecto .actions .form form label {
+        font-weight: 800;
+    }
+
+    .content .proyectos .proyecto .actions .form form input {
+        border: none;
+        outline: none;
+        padding: 15px 10px;
+        background-color: #42053f;
+        color: white;
+    }
+
+    .content .proyectos .proyecto .actions .form form textarea {
+        padding: 5px;
+    }
+
+
+    .content .proyectos .proyecto .actions .form form .editar,
+    .content .proyectos .proyecto .actions .form form .borrar {
+        border: none;
+        height: 40px;
+        width: 100px;
+        background-color: #42053f;
+        box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        color: #983f90;
+        margin: 10px auto;
+    }
+
+    .content .proyectos .proyecto .actions .show {
+        z-index: 6;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
 </style>
 
 <app-socials></app-socials>
 <div class="content" role="main">
-    <div class="sobremi">
-      <div class="info-personal">
-        <img src="../../assets/perfil.jpg" alt="">
-        <div class="descripcion-personal">
-          <h1>Yenny Almao</h1>
-          <p>Full Stack Developer Jr.</p>
+    <h1>Proyectos</h1>
+    <div class="proyectos">
+        <!--Aca deberia de haber un for/foreach que recorra los proyectos y los muestre-->
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 1</h3>
+            <div class="actions">
+                <button (click)="openForm(0,'editar')"><img src="../../assets/modificar.png" alt=""></button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(0, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_0">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_0">
+                        <label for="proyecto_0">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_0" value="Proyecto prueba 1">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button class="btn_eliminar" (click)="openForm(0,'borrar')"><img src="../../assets/eliminar.png"
+                        alt=""></button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(0, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <img src="../../assets/banner.jpg" alt="">
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 2</h3>
+            <div class="actions">
+                <button (click)="openForm(1,'editar')"><img src="../../assets/modificar.png" alt=""></button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(1, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_1">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_1">
+                        <label for="proyecto_1">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_1" value="Proyecto prueba 2">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button class="btn_eliminar" (click)="openForm(1,'borrar')"><img src="../../assets/eliminar.png"
+                        alt=""></button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(1, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="proyecto">
+            <img src="../assets/banner.jpg" alt="">
+            <h3>Proyecto prueba 3</h3>
+            <div class="actions">
+                <button (click)="openForm(2,'editar')"><img src="../../assets/modificar.png" alt=""></button>
+                <div class="form form-edit" id="form-edit">
+                    <form action="" enctype="multipart/form-data">
+                        <button type="button" class="close" (click)="closeForm(2, 'editar')">X</button>
+                        <h2>Editar Proyecto</h2>
+                        <label for="imagen_2">Imagen del proyecto</label>
+                        <input type="file" name="imagen" id="imagen_2">
+                        <label for="proyecto_2">Nombre del proyecto</label>
+                        <input type="text" name="proyecto" id="proyecto_2" value="Proyecto prueba 3">
+                        <button class="editar">Editar</button>
+                    </form>
+                </div>
+                <button class="btn_eliminar" (click)="openForm(2,'borrar')"><img src="../../assets/eliminar.png"
+                        alt=""></button>
+                <div class="form form-delete" id="form-delete">
+                    <form action="">
+                        <button type="button" class="close" (click)="closeForm(2, 'borrar')">X</button>
+                        <h2>Borrar Proyecto</h2>
+                        <p>¿Estás seguro de eliminar este proyecto?</p>
+                        <button class="borrar">Borrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
-  </div>
+</div>
 
 <app-navbar></app-navbar>

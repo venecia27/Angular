@@ -1,122 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
 
-.content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* top: -10px; */
-    font-family: "Open Sans", sans-serif;
-    transition: 0.5s all;
-}
+    .content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* top: -10px; */
+        font-family: "Open Sans", sans-serif;
+        transition: 0.5s all;
+    }
 
-.content h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 50px;
-    position: relative;
-    top: -60px;
-}
+    .content h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        position: relative;
+        top: -60px;
+    }
 
-.content .aboutme {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 500px;
-    width: 50%;
-    background-color: #983f90;
-    border-radius: 20px;
-    /* color: rgb(245, 28, 210); */
-    box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
-    -webkit-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
-    -moz-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
-    padding: 20px;
-}
+    .content .aboutme {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 500px;
+        width: 50%;
+        background-color: #983f90;
+        border-radius: 20px;
+        /* color: rgb(245, 28, 210); */
+        box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+        -webkit-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+        -moz-box-shadow: 9px 9px 0px 0px rgba(245, 28, 210, 0.75);
+        padding: 20px;
+    }
 
-.content .aboutme .actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -40px;
-    right: -40px;
-}
+    .content .aboutme .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+    }
 
-.content .aboutme .actions button {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-}
+    .content .aboutme .actions button {
+        height: 45px;
+        width: 45px;
+        border: none;
+        background: none;
+        outline: none;
+    }
 
-.content .aboutme .actions button:hover {
-    cursor: pointer;
-}
+    .content .aboutme .actions button:hover {
+        cursor: pointer;
+    }
 
-.content .aboutme .actions .form-edit {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 6;
-    height: 0;
-    width: 0;
-    display: none;
-}
+    .content .aboutme .actions button img {
+        height: 40px;
+        width: 40px;
+    }
 
-.content .aboutme .actions .form-edit form {
-    display: flex;
-    flex-direction: column;
-    background-color: #d8b5ff;
-    /* height: 400px; */
-    width: 500px;
-    padding: 15px;
-}
+    .content .aboutme .actions .btn_eliminar img {
+        height: 25px;
+    }
 
-.content .aboutme .actions .form-edit form .close {
-    align-self: flex-end;
-    padding: 5px;
-    border: none;
-    outline: none;
-    background: none;
-    color: #42053f;
-}
+    .content .aboutme .actions .form-delete,
+    .content .aboutme .actions .form-edit {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        height: 0;
+        width: 0;
+        display: none;
+    }
 
-.content .aboutme .actions .form-edit form h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+    .content .aboutme .actions .form-delete form,
+    .content .aboutme .actions .form-edit form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d8b5ff;
+        /* height: 400px; */
+        width: 500px;
+        padding: 15px;
+    }
 
-.content .aboutme .actions .form-edit form textarea {
-    padding: 5px;
-}
+    .content .aboutme .actions .form-delete form .close,
+    .content .aboutme .actions .form-edit form .close {
+        align-self: flex-end;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background: none;
+        color: #42053f;
+    }
 
-.content .aboutme .actions .form-edit form .editar {
-    height: 40px;
-    width: 100px;
-    background-color: #42053f;
-    box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
-    -webkit-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
-    -moz-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
-    color: #983f90;
-}
+    .content .aboutme .actions .form-delete form h2,
+    .content .aboutme .actions .form-edit form h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-.content .aboutme .actions .show {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
-}
+    .content .aboutme .actions .form-delete form textarea,
+    .content .aboutme .actions .form-edit form textarea {
+        padding: 5px;
+    }
 
-.content .aboutme p {
-    width: 85%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    font-size: 17px;
-    text-align: justify;
-    line-height: 40px;
-}
+    .content .aboutme .actions .form-delete form .eliminar,
+    .content .aboutme .actions .form-edit form .editar {
+        height: 40px;
+        width: 100px;
+        background-color: #42053f;
+        box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
+        color: #983f90;
+        margin-top: 20px;
+    }
+
+    .content .aboutme .actions .show {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .content .aboutme p {
+        width: 85%;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 17px;
+        text-align: justify;
+        line-height: 40px;
+    }

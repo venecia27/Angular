@@ -41,21 +41,31 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: -40px;
-        right: -40px;
+        top: -50px;
+        right: -50px;
     }
 
     .content .experiencia .actions button {
-        height: 30px;
-        width: 30px;
-        margin: 5px;
+        height: 40px;
+        width: 40px;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .content .experiencia .actions button img {
+        height: 40px;
+    }
+
+    .content .experiencia .actions .btn_eliminar img {
+        height: 25px;
     }
 
     .content .experiencia .actions button:hover {
         cursor: pointer;
     }
 
-    .content .experiencia .actions .form-edit {
+    .content .experiencia .actions .form {
         position: fixed;
         top: 0;
         left: 0;
@@ -65,16 +75,17 @@
         display: none;
     }
 
-    .content .experiencia .actions .form-edit form {
+    .content .experiencia .actions .form form {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: #d8b5ff;
         /* height: 400px; */
         width: 500px;
         padding: 15px;
     }
 
-    .content .experiencia .actions .form-edit form .close {
+    .content .experiencia .actions .form form .close {
         align-self: flex-end;
         padding: 5px;
         border: none;
@@ -83,16 +94,17 @@
         color: #42053f;
     }
 
-    .content .experiencia .actions .form-edit form h2 {
+    .content .experiencia .actions .form form h2 {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .content .experiencia .actions .form-edit form textarea {
+    .content .experiencia .actions .form form textarea {
         padding: 5px;
     }
 
-    .content .experiencia .actions .form-edit form .editar {
+    .content .experiencia .actions .form form .eliminar,
+    .content .experiencia .actions .form form .editar {
         height: 40px;
         width: 100px;
         background-color: #42053f;
@@ -100,6 +112,7 @@
         -webkit-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
         -moz-box-shadow: 5px 5px 0px 0px rgba(245, 28, 210, 0.75);
         color: #983f90;
+        margin-top: 20px;
     }
 
 

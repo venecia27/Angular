@@ -36,8 +36,8 @@
 .content .skills .skill {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
     width: 50%;
 
@@ -49,12 +49,33 @@
     padding: 10px 0;
 }
 
-.content .skills button {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
+.content .skills .skill .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.content .skills .skill .actions button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+.content .skills button img {
+    height: 40px;
+}
+
+.content .skills .skill .actions .btn_eliminar img{
+    height: 25px;
+}
 .content .skills button:hover {
     cursor: pointer;
 }

@@ -2,7 +2,7 @@
     <h1>About me</h1>
     <div class="aboutme">
         <div class="actions">
-            <button (click)="openForm('editar')">E</button>
+            <button (click)="openForm('editar')"><img src="../../assets/modificar.png" alt=""></button>
             <div class="form-edit" id="form-edit">
                 <form action="">
                     <button type="button" class="close" (click)="closeForm('editar')">X</button>
@@ -12,7 +12,17 @@
                     <button class="editar">Editar</button>
                 </form>
             </div>
-            <!-- <button>B</button> -->
+            <button class="btn_eliminar" (click)="openForm('borrar')"><img src="../../assets/eliminar.png"
+                    alt=""></button>
+            <div class="form-delete" id="form-delete">
+                <form action="">
+                    <button type="button" class="close" (click)="closeForm('borrar')">X</button>
+                    <h2>Borrar Sobre Mi</h2>
+                    <p>¿Estás seguro de eliminar esta descripcion?</p>
+
+                    <button class="eliminar">Eliminar</button>
+                </form>
+            </div>
         </div>
         <p>Yenny Lisset Almao Ojeda, soy venezolana oriunda del país de las mujeres más lindas del planeta. Llegue a
             esta hermosa tierra hace 3 años buscando calidad de vida y un mejor futuro . Apasionada a la tecnología,

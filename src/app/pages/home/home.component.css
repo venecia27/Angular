@@ -32,22 +32,101 @@
     padding: 0 30px;
 }
 
-.sobremi .info-personal img {
+.sobremi .info-personal .perfil {
+    position: relative;
+}
+
+.sobremi .info-personal .perfil button {
+    height: 60px;
+    width: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+}
+.sobremi .info-personal .perfil button:hover {
+    cursor: pointer;
+}
+.sobremi .info-personal .perfil button img {
+    height: 50px;
+    width: 50px;
+}
+
+.sobremi .info-personal .perfil img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
 }
 
-.sobremi .info-personal h1 {
+.sobremi .info-personal .descripcion-personal {
+    position: relative;
+}
+
+.sobremi .info-personal .descripcion-personal button {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}
+
+.sobremi .info-personal .descripcion-personal button:hover {
+    cursor: pointer;
+}
+
+.sobremi .info-personal .descripcion-personal button img {
+    height: 45px;
+    width: 45px;
+}
+
+.sobremi .info-personal .descripcion-personal h1 {
     font-size: 32px;
     text-align: center;
 }
 
-.sobremi .info-personal p {
+.sobremi .info-personal .descripcion-personal p {
     font-weight: 600;
     font-size: 21px;
 }
 
-.sobremi > img {
+.sobremi .banner {
+    position: relative;
+}
+
+.sobremi .banner > img {
     height: 250px;
+}
+
+.sobremi .banner .buttons {
+    position: absolute;
+    top: 25px;
+    right: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi .banner .buttons button {
+    height: 45px;
+    width: 45px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.sobremi .banner .buttons button:hover {
+    cursor: pointer;
+}
+
+.sobremi .banner .buttons button img {
+    height: 40px;
+}
+
+.sobremi .banner .buttons button:last-child img {
+    height: 25px;
 }

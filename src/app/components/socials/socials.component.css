@@ -8,9 +8,17 @@ header {
     z-index: 5;
     width: 100%;
 }
-
-header > img {
+header .ministerio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+header .ministerio > img {
     height: 70px;
+}
+header .ministerio img:last-child {
+    height: 43px;
+    margin: 0 5px;
 }
 
 header .redes {
